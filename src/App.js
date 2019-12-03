@@ -1,0 +1,52 @@
+import React from "react";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Table from "./Table";
+import Photos from "./Photos";
+import PhotosMain from "./PhotosMain";
+import PicsHanoiDay1 from "./img_hanoi-day1";
+import PicsHanoi2 from "./img_hanoi2";
+import PicsSaigonArrival from "./img_saigon-arrival";
+import PicsHaLongBay1 from "./img_halongbay1";
+import PicsHaLongBay2 from "./img_halongbay2";
+import Activities from "./Activities";
+
+export default function App() {
+  return (
+    <Router basename={"/vietnam"}>
+      <Switch>
+        <Route exact path="/">
+          <PhotosMain />
+        </Route>
+        <Route path="/hanoi2">
+          <Photos tileData={PicsHanoi2} />
+        </Route>
+        <Route path="/halongbay2">
+          <Photos tileData={PicsHaLongBay2} />
+        </Route>
+        <Route path="/halongbay1">
+          <Photos tileData={PicsHaLongBay1} />
+        </Route>
+        <Route path="/itinerary">
+          <Table showLinks={false} />
+        </Route>
+        <Route path="/tc">
+          <Table showLinks={true} />
+        </Route>
+        <Route path="/photos">
+          <PhotosMain />
+        </Route>
+        <Route path="/hanoi1">
+          <Photos tileData={PicsHanoiDay1} />
+        </Route>
+        <Route path="/saigonarrival">
+          <Photos tileData={PicsSaigonArrival} />
+        </Route>
+        <Route path="/activities">
+          <Activities showLinks={false} />
+        </Route>
+      </Switch>
+    </Router>
+  );
+}

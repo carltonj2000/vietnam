@@ -39,7 +39,6 @@ const useStyles = makeStyles(theme => ({
 function DenseTable() {
   const classes = useStyles();
   const tiles = tileData.length;
-  console.log(tiles);
   return (
     <Layout>
       {!tiles ? (

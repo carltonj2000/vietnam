@@ -10,6 +10,7 @@ import PicsHanoi2 from "./img_hanoi2";
 import PicsSaigonArrival from "./img_saigon-arrival";
 import PicsHaLongBay1 from "./img_halongbay1";
 import PicsHaLongBay2 from "./img_halongbay2";
+import PicsTamcoc from "./img_tamcoc";
 import Activities from "./Activities";
 
 export default function App() {
@@ -18,6 +19,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/tamcoc">
+          <Photos tileData={PicsTamcoc} />
         </Route>
         <Route path="/hanoi2">
           <Photos tileData={PicsHanoi2} />

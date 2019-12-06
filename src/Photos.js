@@ -96,7 +96,7 @@ function DenseTable({ tileData }) {
       if (diffX > 0) prev();
       else next();
     } else {
-      if (diffY > 0) next();
+      if (diffY >= 0) next();
       else prev();
     }
 
@@ -157,6 +157,7 @@ function DenseTable({ tileData }) {
               onTouchEnd={moveTouch}
               onMouseDown={startTouch}
               onMouseUp={moveTouch}
+              onClick={next}
             />
             <CloseIcon className={classes.icon} onClick={handleClose} />
           </>

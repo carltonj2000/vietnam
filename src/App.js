@@ -7,10 +7,12 @@ import Photos from "./Photos";
 import PhotosMain from "./PhotosMain";
 import PicsHanoiDay1 from "./img_hanoi-day1";
 import PicsHanoi2 from "./img_hanoi2";
+import PicsHanoi3 from "./img_hanoi3";
 import PicsSaigonArrival from "./img_saigon-arrival";
 import PicsHaLongBay1 from "./img_halongbay1";
 import PicsHaLongBay2 from "./img_halongbay2";
 import PicsTamcoc from "./img_tamcoc";
+import Picshangtien from "./img_hang-tien";
 import Activities from "./Activities";
 
 export default function App() {
@@ -19,6 +21,12 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/hangtien">
+          <Photos tileData={Picshangtien} />
+        </Route>
+        <Route path="/hanoi3">
+          <Photos tileData={PicsHanoi3} />
         </Route>
         <Route path="/tamcoc">
           <Photos tileData={PicsTamcoc} />

@@ -4,6 +4,8 @@ import md_96659d5b9c87e2a84d9ce8a0510e9a06 from "./images/halongbay1/IMG_6749.JP
 import md_e7bf2560b694b9c6c48194144a79c754 from "./images/halongbay2/IMG_6900.JPG";
 import md_0b2f779b660f6b832bb910a9b3d60cc1 from "./images/hanoi2/IMG_6957.JPG";
 import md_d9c7ebca6a4871f2891f83f18c66d3b2 from "./images/tamcoc/IMG_7007.JPG";
+import md_ece4b4548ed359289f69596e42f1ab1f from "./images/hanoi3/IMG_7185.JPG";
+import md_dc01b0cce267cd8f3d4a134405205c1e from "./images/hang-tien/IMG_7357.JPG";
 export default [
   {
     description: "Ho Chi Minh 1",
@@ -34,5 +36,15 @@ export default [
     description: "Tam Coc",
     img: md_d9c7ebca6a4871f2891f83f18c66d3b2,
     route: "tamcoc"
+  },
+  {
+    description: "Hanoi 3",
+    img: md_ece4b4548ed359289f69596e42f1ab1f,
+    route: "hanoi3"
+  },
+  {
+    description: "Hang Tien",
+    img: md_dc01b0cce267cd8f3d4a134405205c1e,
+    route: "hangtien"
   }
 ];

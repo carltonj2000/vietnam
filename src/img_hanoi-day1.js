@@ -9,6 +9,7 @@ import md_cce4a00c59c6bce786de8ccc46d29d8b from "./images/hanoi-day1/IMG_6403.JP
 import md_479e66971dce8e0c64dde63324f025ba from "./images/hanoi-day1/IMG_6410.JPG";
 import md_c6c8488341c7107f3131806b7432f599 from "./images/hanoi-day1/IMG_8042.JPG";
 import md_c62d881e10915a25fa3e009a86b86d34 from "./images/hanoi-day1/IMG_8047.JPG";
+import md_ff7c7d5b4dc7905c5fdaf3381baf5aa3 from "./images/hanoi-day1/IMG_8052.JPG";
 import md_a783a8d7e568e7cb657ae99c752fd5f2 from "./images/hanoi-day1/IMG_8065.JPG";
 import md_faa183829c8c33a34c81c4e037373070 from "./images/hanoi-day1/IMG_8067.JPG";
 import md_3e523573645db3004ea34ce4015f23c0 from "./images/hanoi-day1/IMG_8071.JPG";
@@ -77,6 +78,10 @@ export default [
   {
     filename: "IMG_8047.JPG",
     img : md_c62d881e10915a25fa3e009a86b86d34,
+  },
+  {
+    filename: "IMG_8052.JPG",
+    img : md_ff7c7d5b4dc7905c5fdaf3381baf5aa3,
   },
   {
     filename: "IMG_8065.JPG",

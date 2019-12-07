@@ -2,6 +2,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import Activities from "./Activities";
 import Table from "./Table";
 import Photos from "./Photos";
 import PhotosMain from "./PhotosMain";
@@ -13,7 +14,7 @@ import PicsHaLongBay1 from "./img_halongbay1";
 import PicsHaLongBay2 from "./img_halongbay2";
 import PicsTamcoc from "./img_tamcoc";
 import Picshangtien from "./img_hang-tien";
-import Activities from "./Activities";
+import Picstulan from "./img_tulan";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/tulan">
+          <Photos tileData={Picstulan} />
         </Route>
         <Route path="/hangtien">
           <Photos tileData={Picshangtien} />

@@ -6,6 +6,8 @@ import md_0b2f779b660f6b832bb910a9b3d60cc1 from "./images/hanoi2/IMG_6957.JPG";
 import md_d9c7ebca6a4871f2891f83f18c66d3b2 from "./images/tamcoc/IMG_7007.JPG";
 import md_ece4b4548ed359289f69596e42f1ab1f from "./images/hanoi3/IMG_7185.JPG";
 import md_dc01b0cce267cd8f3d4a134405205c1e from "./images/hang-tien/IMG_7357.JPG";
+import md_faf2eb8342e25d86bbd3afa8d6805fce from "./images/tulan/IMG_7531.JPG";
+
 export default [
   {
     description: "Ho Chi Minh 1",
@@ -46,5 +48,10 @@ export default [
     description: "Hang Tien",
     img: md_dc01b0cce267cd8f3d4a134405205c1e,
     route: "hangtien"
+  },
+  {
+    description: "Tu Lan",
+    img: md_faf2eb8342e25d86bbd3afa8d6805fce,
+    route: "tulan"
   }
 ];

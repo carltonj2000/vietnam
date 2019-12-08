@@ -15,6 +15,7 @@ import PicsHaLongBay2 from "./img_halongbay2";
 import PicsTamcoc from "./img_tamcoc";
 import Picshangtien from "./img_hang-tien";
 import Picstulan from "./img_tulan";
+import Picshue from "./img_hue";
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/hue">
+          <Photos tileData={Picshue} />
         </Route>
         <Route path="/tulan">
           <Photos tileData={Picstulan} />

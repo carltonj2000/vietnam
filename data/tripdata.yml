@@ -76,40 +76,46 @@ locations:
       pre: Order R2FCJ6J
       link: OxalisAdventure.pdf
       post: Hang Tien
-  - at: Da Nang
+  - at: Hue
     date: 12/7
     details:
-      pre: Order R2FCJ6J
-      link: OxalisAdventure.pdf
-      post: Tu Lan
-  - at: Hoi An
-    date:
-    details:
-      pre:
+      pre: Imperial Palace - Khai Dinh
       link:
-      post: Ba Na Hills & Golden Bridge
-  - at: Nha Trang
-    date:
+      post:
+  - at: Hue
+    date: 12/8
     details:
-      pre: Gondola
+      pre: Thien Mu
+      link:
+      post:
+  - at: Hoi An
+    date: 12/9
+    details:
+      pre: Marina Resort, 74 Duong 18/8 Phurong Cam pho
+      link:
+      post:
+  - at: Can Tho
+    date: 12/10
+    details:
+      pre: Ninh Kieu
+      link:
+      post:
+  - at: Can Tho
+    date: 12/11
+    details:
+      pre: 2 Hai Ba Trung
       link:
       post:
   - at: Ho Chi Minh
-    date:
+    date: 12/12
     details:
-      pre:
+      pre: Des Arts Sai Gon
       link:
       post:
-  - at: Mekong Delta
-    date:
+  - at: Ho Chi Minh
+    date: 12/13
     details:
-      pre:
-      link:
-      post:
-  - at: Phu Quoc
-    date:
-    details:
-      pre:
+      pre: 76 Nguyen Thi Minh Khai, Quan 3
       link:
       post:
   - at: SGN to PVN

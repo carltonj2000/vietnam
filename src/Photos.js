@@ -105,13 +105,27 @@ function DenseTable({ tileData }) {
 
     e.preventDefault();
   }
-
   const handleOpen = i => {
     photoSet(i);
     tileSet(tileData[i]);
     openSet(true);
   };
+
   const handleClose = () => openSet(false);
+
+  const handleKeyPress = event => {
+    console.log("key", event.key);
+    if (
+      event.key === "Enter" ||
+      event.key === "Space" ||
+      event.key === "ArrowDown" ||
+      event.key === "ArrowRight"
+    )
+      next();
+
+    if (event.key === "ArrowUp" || event.key === "ArrowLeft") prev();
+    if (event.key === "ESC") handleClose();
+  };
 
   return (
     <Layout>
@@ -144,6 +158,7 @@ function DenseTable({ tileData }) {
         open={open}
         onClose={handleClose}
         className={classes.modal}
+        onClick={next}
       >
         {!tile ? (
           <p>Loading</p>
@@ -155,9 +170,7 @@ function DenseTable({ tileData }) {
               src={tile.img}
               onTouchStart={startTouch}
               onTouchEnd={moveTouch}
-              onMouseDown={startTouch}
-              onMouseUp={moveTouch}
-              onClick={next}
+              onKeyPress={handleKeyPress}
             />
             <CloseIcon className={classes.icon} onClick={handleClose} />
           </>

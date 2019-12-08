@@ -112,55 +112,64 @@
       }
     },
     {
-      "at": "Da Nang",
+      "at": "Hue",
       "date": "12/7",
       "details": {
-        "pre": "Order R2FCJ6J",
-        "link": "OxalisAdventure.pdf",
-        "post": "Tu Lan"
+        "pre": "Imperial Palace - Khai Dinh",
+        "link": null,
+        "post": null
+      }
+    },
+    {
+      "at": "Hue",
+      "date": "12/8",
+      "details": {
+        "pre": "Thien Mu",
+        "link": null,
+        "post": null
       }
     },
     {
       "at": "Hoi An",
-      "date": null,
+      "date": "12/9",
       "details": {
-        "pre": null,
+        "pre": "Marina Resort, 74 Duong 18/8 Phurong Cam pho",
         "link": null,
-        "post": "Ba Na Hills & Golden Bridge"
+        "post": null
       }
     },
     {
-      "at": "Nha Trang",
-      "date": null,
+      "at": "Can Tho",
+      "date": "12/10",
       "details": {
-        "pre": "Gondola",
+        "pre": "Ninh Kieu",
+        "link": null,
+        "post": null
+      }
+    },
+    {
+      "at": "Can Tho",
+      "date": "12/11",
+      "details": {
+        "pre": "2 Hai Ba Trung",
         "link": null,
         "post": null
       }
     },
     {
       "at": "Ho Chi Minh",
-      "date": null,
+      "date": "12/12",
       "details": {
-        "pre": null,
+        "pre": "Des Arts Sai Gon",
         "link": null,
         "post": null
       }
     },
     {
-      "at": "Mekong Delta",
-      "date": null,
+      "at": "Ho Chi Minh",
+      "date": "12/13",
       "details": {
-        "pre": null,
-        "link": null,
-        "post": null
-      }
-    },
-    {
-      "at": "Phu Quoc",
-      "date": null,
-      "details": {
-        "pre": null,
+        "pre": "76 Nguyen Thi Minh Khai, Quan 3",
         "link": null,
         "post": null
       }

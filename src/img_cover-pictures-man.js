@@ -9,6 +9,7 @@ import md_dc01b0cce267cd8f3d4a134405205c1e from "./images/hang-tien/IMG_7357.JPG
 import md_faf2eb8342e25d86bbd3afa8d6805fce from "./images/tulan/IMG_7531.JPG";
 import md_0fad79583d20460baacdb280a9b3b0bf from "./images/hue/IMG_7723.JPG";
 import md_263946f71a07c45f934bb4d039011d74 from "./images/hoi-anh/IMG_7904.JPG";
+import md_b2c3ed3fdb448b8737a96dcd4adccd87 from "./images/cantho/IMG_8009.JPG";
 
 export default [
   {
@@ -65,5 +66,10 @@ export default [
     description: "Hoi An",
     img: md_263946f71a07c45f934bb4d039011d74,
     route: "hoian"
+  },
+  {
+    description: "Can Tho",
+    img: md_b2c3ed3fdb448b8737a96dcd4adccd87,
+    route: "cantho"
   }
 ];

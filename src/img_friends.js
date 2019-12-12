@@ -10,7 +10,7 @@ import md_7337c3e3b4eee7cdc73f8d8f30c7d3db from "./images/friends/IMG_8372.JPG";
 import md_96d78e8a0a5bca623d306f9641d68115 from "./images/friends/IMG_8378.JPG";
 import md_f881c0531555fff288b1c168ce6c8065 from "./images/friends/IMG_8379.JPG";
 import md_108deac610856a05ee6943f45968d653 from "./images/friends/IMG_8380.JPG";
-import md_3bd5e77e63cd4a470a7412fabcc42870 from "./images/friends/IMG_8383.JPG";
+import md_c814e5bb5e28efea28fe18575dac0a59 from "./images/friends/IMG_8381.JPG";
 import md_1468929c71dd6e5c658b9f6fb1607387 from "./images/friends/IMG_8387.JPG";
 import md_6c6e447bfed194c0b061ce11fbebc869 from "./images/friends/IMG_8392.JPG";
 import md_2f4e9e4bb75dece9bd9446d8c8dd7ce7 from "./images/friends/IMG_8393.JPG";
@@ -67,8 +67,8 @@ export default [
     img : md_108deac610856a05ee6943f45968d653,
   },
   {
-    filename: "IMG_8383.JPG",
-    img : md_3bd5e77e63cd4a470a7412fabcc42870,
+    filename: "IMG_8381.JPG",
+    img : md_c814e5bb5e28efea28fe18575dac0a59,
   },
   {
     filename: "IMG_8387.JPG",

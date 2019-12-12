@@ -20,6 +20,7 @@ import Picshoian from "./img_hoi-anh";
 import Picscantho from "./img_cantho";
 import Picsmekong from "./img_mekong";
 import Picscantho2 from "./img_cantho2";
+import Picssaigon from "./img_saigon";
 
 export default function App() {
   return (
@@ -27,6 +28,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/saigon">
+          <Photos tileData={Picssaigon} />
         </Route>
         <Route path="/cantho2">
           <Photos tileData={Picscantho2} />

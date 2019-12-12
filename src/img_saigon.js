@@ -1,4 +1,3 @@
-import md_4decb5c3793bdfb05be321900913408f from "./images/saigon/IMG_8436.JPG";
 import md_c05be72d03426c71d643b2dcafe7e05e from "./images/saigon/IMG_8441.JPG";
 import md_9c749a9c2bb1eca09e14129464c75dbe from "./images/saigon/IMG_8442.JPG";
 import md_31481e6da9b58dce3e2dc18e5d344daf from "./images/saigon/IMG_8457.JPG";
@@ -15,10 +14,6 @@ import md_d3f366604df40f8ca7a5e58963a0fbb9 from "./images/saigon/IMG_8539.JPG";
 import md_89c5ed9ba33a9b4c9cfe4eef19865648 from "./images/saigon/IMG_8551.JPG";
 
 export default [
-  {
-    filename: "IMG_8436.JPG",
-    img : md_4decb5c3793bdfb05be321900913408f,
-  },
   {
     filename: "IMG_8441.JPG",
     img : md_c05be72d03426c71d643b2dcafe7e05e,

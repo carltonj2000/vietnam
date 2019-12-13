@@ -130,12 +130,12 @@ locations:
     time: 1:30P-8:30A
     details:
       pre: UA858
-      link: flight-lax-pvg-sfo.pdf
+      link: flight-pvg-sfo-lax.pdf
       post: from Shanghai
   - at: SFO to LAS
     date: 12/14
     time: 11A-12:42P
     details:
       pre: UA358
-      link: flight-lax-pvg-sfo.pdf
+      link: flight-pvg-sfo-lax.pdf
       post: United

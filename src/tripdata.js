@@ -7,6 +7,7 @@ import md_61611c03c66eb4aede76c8ce4e6798df from "./resources/hotelHanoiPrimeGard
 import md_f1915926a3a49d356cc86f3972dbae47 from "./resources/han-vdh.pdf";
 import md_71107f1775093a558da119126c01ec26 from "./resources/OxalisAdventure.pdf";
 import md_b5c3a6c4a0f472c7be64225c6a513dcf from "./resources/hoAn2canThoFlight.pdf";
+import md_508b5de55564cb33a64c5ebc483cfb7f from "./resources/flight-pvg-sfo-lax.pdf";
 
 export default {
   "flight-lax-pvg-sfo.pdf": md_46aa1795af63fa6751c3d05a93347abe,
@@ -18,4 +19,5 @@ export default {
   "han-vdh.pdf": md_f1915926a3a49d356cc86f3972dbae47,
   "OxalisAdventure.pdf": md_71107f1775093a558da119126c01ec26,
   "hoAn2canThoFlight.pdf": md_b5c3a6c4a0f472c7be64225c6a513dcf,
+  "flight-pvg-sfo-lax.pdf": md_508b5de55564cb33a64c5ebc483cfb7f,
 }

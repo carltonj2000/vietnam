@@ -14,6 +14,7 @@ import md_c8e12c4a275880e5381e786c270f145f from "./images/mekong/IMG_8259.JPG";
 import md_bd293e903facfeef0bf871c25ac0f91e from "./images/cantho2/IMG_8398.JPG";
 import md_2732798bcf0668fbe4dd350d1593686c from "./images/saigon/IMG_8500.JPG";
 import md_4decb5c3793bdfb05be321900913408f from "./images/friends/IMG_8436.JPG";
+import md_eb78dc842218bcffb89bc844f3ff7219 from "./images/vietcong/IMG_8582.JPG";
 
 export default [
   {
@@ -95,5 +96,10 @@ export default [
     description: "Saigon",
     img: md_2732798bcf0668fbe4dd350d1593686c,
     route: "saigon"
+  },
+  {
+    description: "Viet Cong Tunnels",
+    img: md_eb78dc842218bcffb89bc844f3ff7219,
+    route: "vietcong"
   }
 ];

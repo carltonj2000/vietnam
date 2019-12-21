@@ -45,7 +45,7 @@ const processDir = dir => {
     if (!file.filename.match(/.(jpg|jpeg|png)$/i)) return;
     if (fs.statSync(path.join(subDir, file.filename)).isDirectory()) return;
     const md = "md_" + md5(file.filename);
-    imports.push(`import ${md} from "./images/${dir}/${file.filename}";`);
+    imports.push(`import ${md} from "./${file.filename}";`);
     exports.push(`  {`);
     Object.keys(file).map(k =>
       k === "active"
@@ -56,7 +56,7 @@ const processDir = dir => {
     exports.push(`  },`);
   });
   const out = imports.join("\n") + exports.join("\n") + "\n]\n";
-  fs.writeFileSync(`./src/img_${dir}.js`, out);
+  fs.writeFileSync(`./src/images/${dir}/${dir}.js`, out);
   fs.writeFileSync(ymlOut, yaml.safeDump(files));
 };
 

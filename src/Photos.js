@@ -6,6 +6,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import CloseIcon from "@material-ui/icons/Close";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import clsx from "clsx";
+import { useHistory } from "react-router-dom";
 
 import Layout from "./Layout";
 
@@ -20,6 +23,12 @@ const useStyles = makeStyles(theme => ({
   card: {
     position: "relative",
     maxWidth: 345
+  },
+  r90: {
+    transform: "rotate(90deg)"
+  },
+  r180: {
+    transform: "rotate(180deg)"
   },
   img: {
     height: 140
@@ -127,6 +136,16 @@ function DenseTable({ tileData }) {
     if (event.key === "ESC") handleClose();
   };
 
+  const history = useHistory();
+
+  const cls = ({ rotation: r }) =>
+    !r
+      ? clsx(classes.img)
+      : r === "90"
+      ? clsx(classes.img, classes.r90)
+      : r === "180"
+      ? clsx(classes.img, classes.r190)
+      : clsx(classes.img);
   return (
     <Layout>
       {!tiles ? (
@@ -140,16 +159,21 @@ function DenseTable({ tileData }) {
               key={tile.filename}
               className={classes.card}
               onClick={() => handleOpen(idx)}
+              onKeyDown={handleKeyPress}
             >
               <CardActionArea>
                 <CardMedia
-                  className={classes.img}
+                  className={cls(tile)}
                   alt={tile.description || tile.filename}
                   image={tile.img}
                 />
               </CardActionArea>
             </Card>
           ))}
+          <ArrowBackIcon
+            className={classes.icon}
+            onClick={() => history.push("/photos")}
+          />
         </div>
       )}
       <Modal

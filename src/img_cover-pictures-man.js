@@ -16,6 +16,7 @@ import md_2732798bcf0668fbe4dd350d1593686c from "./images/saigon/IMG_8500.JPG";
 import md_4decb5c3793bdfb05be321900913408f from "./images/friends/IMG_8436.JPG";
 import md_eb78dc842218bcffb89bc844f3ff7219 from "./images/vietcong/IMG_8582.JPG";
 import md_52577d0f8087cc73d659987dca612fb7 from "./images/danang/IMG_7825.JPG";
+import md_8adba010a9298dd2fc1710911a883f7c from "./images/saigon2/EFFECTS.jpg";
 
 export default [
   {
@@ -107,5 +108,10 @@ export default [
     description: "Viet Cong Tunnels",
     img: md_eb78dc842218bcffb89bc844f3ff7219,
     route: "vietcong"
+  },
+  {
+    description: "Ho Chi Minh 2",
+    img: md_8adba010a9298dd2fc1710911a883f7c,
+    route: "saigon2"
   }
 ];

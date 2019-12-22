@@ -21,6 +21,7 @@ import Picscantho from "./images/cantho/cantho.js";
 import Picsmekong from "./images/mekong/mekong.js";
 import Picscantho2 from "./images/cantho2/cantho2.js";
 import Picssaigon from "./images/saigon/saigon.js";
+import Picssaigon2 from "./images/saigon2/saigon2.js";
 import Picsfriends from "./images/friends/friends.js";
 import Picsvietcong from "./images/vietcong/vietcong.js";
 import Picsdanang from "./images/danang/danang.js";
@@ -31,6 +32,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/saigon2">
+          <Photos tileData={Picssaigon2} />
         </Route>
         <Route path="/danang">
           <Photos tileData={Picsdanang} />

@@ -15,6 +15,7 @@ import md_bd293e903facfeef0bf871c25ac0f91e from "./images/cantho2/IMG_8398.JPG";
 import md_2732798bcf0668fbe4dd350d1593686c from "./images/saigon/IMG_8500.JPG";
 import md_4decb5c3793bdfb05be321900913408f from "./images/friends/IMG_8436.JPG";
 import md_eb78dc842218bcffb89bc844f3ff7219 from "./images/vietcong/IMG_8582.JPG";
+import md_52577d0f8087cc73d659987dca612fb7 from "./images/danang/IMG_7825.JPG";
 
 export default [
   {
@@ -66,6 +67,11 @@ export default [
     description: "Hue",
     img: md_0fad79583d20460baacdb280a9b3b0bf,
     route: "hue"
+  },
+  {
+    description: "Da Nang",
+    img: md_52577d0f8087cc73d659987dca612fb7,
+    route: "danang"
   },
   {
     description: "Hoi An",

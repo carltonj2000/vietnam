@@ -23,6 +23,7 @@ import Picscantho2 from "./images/cantho2/cantho2.js";
 import Picssaigon from "./images/saigon/saigon.js";
 import Picsfriends from "./images/friends/friends.js";
 import Picsvietcong from "./images/vietcong/vietcong.js";
+import Picsdanang from "./images/danang/danang.js";
 
 export default function App() {
   return (
@@ -30,6 +31,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <PhotosMain />
+        </Route>
+        <Route path="/danang">
+          <Photos tileData={Picsdanang} />
         </Route>
         <Route path="/vietcong">
           <Photos tileData={Picsvietcong} />

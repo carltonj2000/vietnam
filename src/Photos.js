@@ -179,10 +179,10 @@ function DenseTable({ tileData }) {
               </CardActionArea>
             </Card>
           ))}
-          <ArrowBackIcon
+          {/* <ArrowBackIcon
             className={classes.icon}
             onClick={() => history.push("/photos")}
-          />
+          /> */}
         </div>
       )}
       <Modal

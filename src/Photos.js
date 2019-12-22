@@ -30,11 +30,15 @@ const useStyles = makeStyles(theme => ({
   r180: {
     transform: "rotate(180deg)"
   },
+  r270: {
+    transform: "rotate(270deg)"
+  },
   img: {
     height: 140
   },
   imgModal: {
-    width: "100%"
+    width: "100%",
+    imageOrientation: "from-image"
   },
   modal: {
     display: "flex",
@@ -138,14 +142,19 @@ function DenseTable({ tileData }) {
 
   const history = useHistory();
 
-  const cls = ({ rotation: r }) =>
+  const cls = (bc, { rotate: r }) =>
     !r
-      ? clsx(classes.img)
+      ? clsx(bc)
       : r === "90"
-      ? clsx(classes.img, classes.r90)
+      ? clsx(bc, classes.r90)
       : r === "180"
-      ? clsx(classes.img, classes.r190)
-      : clsx(classes.img);
+      ? clsx(bc, classes.r180)
+      : r === "270"
+      ? clsx(bc, classes.r270)
+      : clsx(bc);
+
+  React.useEffect(() => {}, []);
+
   return (
     <Layout>
       {!tiles ? (
@@ -163,7 +172,7 @@ function DenseTable({ tileData }) {
             >
               <CardActionArea>
                 <CardMedia
-                  className={cls(tile)}
+                  className={cls(classes.img, tile)}
                   alt={tile.description || tile.filename}
                   image={tile.img}
                 />
@@ -189,7 +198,7 @@ function DenseTable({ tileData }) {
         ) : (
           <>
             <img
-              className={classes.imgModal}
+              className={cls(classes.imgModal, tile)}
               alt={tile.description || tile.filename}
               src={tile.img}
               onTouchStart={startTouch}

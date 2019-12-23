@@ -44,7 +44,8 @@ const useStyles = makeStyles(theme => ({
   modal: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    backgroundColor: "rgba(0,0,0,0.7)"
   },
   icon: {
     position: "absolute",
@@ -174,7 +175,6 @@ function DenseTable({ tileData }) {
                 key={tile.filename}
                 className={classes.card}
                 onClick={() => handleOpen(idx)}
-                onKeyDown={handleKeyPress}
               >
                 <CardActionArea>
                   <CardMedia
@@ -202,18 +202,18 @@ function DenseTable({ tileData }) {
         onClose={handleClose}
         className={classes.modal}
         onClick={next}
+        onKeyDown={handleKeyPress}
       >
         {!tile ? (
           <p>Loading</p>
         ) : (
-          <>
+          <div style={{ outline: 0 }}>
             <img
               className={cls(classes.imgModal, tile)}
               alt={tile.description || tile.filename}
               src={tile.img}
               onTouchStart={startTouch}
               onTouchEnd={moveTouch}
-              onKeyPress={handleKeyPress}
             />
             <Fab
               aria-label="close"
@@ -222,7 +222,7 @@ function DenseTable({ tileData }) {
             >
               <CloseIcon />
             </Fab>
-          </>
+          </div>
         )}
       </Modal>
     </Layout>

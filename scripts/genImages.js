@@ -29,7 +29,6 @@ const orderFiles = (rndfIn, ordf) => {
 const processDir = dir => {
   console.log("dir", dir);
   const ymlIn = path.join(ymlDir, dir + "In.yml");
-  const ymlOut = path.join(ymlDir, dir + ".yml");
   const docs = fs.existsSync(ymlIn)
     ? yaml.safeLoad(fs.readFileSync(ymlIn, "utf8"))
     : [];
@@ -57,7 +56,10 @@ const processDir = dir => {
   });
   const out = imports.join("\n") + exports.join("\n") + "\n]\n";
   fs.writeFileSync(`./src/images/${dir}/${dir}.js`, out);
-  fs.writeFileSync(ymlOut, yaml.safeDump(files));
+  fs.writeFileSync(
+    path.join(ymlDir, "generated", dir + ".yml"),
+    yaml.safeDump(files)
+  );
 };
 
 try {

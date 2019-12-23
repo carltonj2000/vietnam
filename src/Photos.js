@@ -6,6 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import CloseIcon from "@material-ui/icons/Close";
+import Fab from "@material-ui/core/Fab";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import clsx from "clsx";
 import { useHistory } from "react-router-dom";
@@ -54,6 +55,13 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "12px",
     margin: "16px",
     border: "1px solid #da251d"
+  },
+  fab: {
+    position: "fixed",
+    color: "rgba(218, 37, 29, 1)",
+    backgroundColor: "rgba(255, 255, 0, 1)",
+    bottom: theme.spacing(2),
+    right: theme.spacing(2)
   }
 }));
 
@@ -127,7 +135,6 @@ function DenseTable({ tileData }) {
   const handleClose = () => openSet(false);
 
   const handleKeyPress = event => {
-    console.log("key", event.key);
     if (
       event.key === "Enter" ||
       event.key === "Space" ||
@@ -153,8 +160,6 @@ function DenseTable({ tileData }) {
       ? clsx(bc, classes.r270)
       : clsx(bc);
 
-  React.useEffect(() => {}, []);
-
   return (
     <Layout>
       {!tiles ? (
@@ -162,27 +167,32 @@ function DenseTable({ tileData }) {
           "Coming Soon"
         </Typography>
       ) : (
-        <div className={classes.root}>
-          {tileData.map((tile, idx) => (
-            <Card
-              key={tile.filename}
-              className={classes.card}
-              onClick={() => handleOpen(idx)}
-              onKeyDown={handleKeyPress}
-            >
-              <CardActionArea>
-                <CardMedia
-                  className={cls(classes.img, tile)}
-                  alt={tile.description || tile.filename}
-                  image={tile.img}
-                />
-              </CardActionArea>
-            </Card>
-          ))}
-          {/* <ArrowBackIcon
-            className={classes.icon}
+        <div>
+          <div className={classes.root}>
+            {tileData.map((tile, idx) => (
+              <Card
+                key={tile.filename}
+                className={classes.card}
+                onClick={() => handleOpen(idx)}
+                onKeyDown={handleKeyPress}
+              >
+                <CardActionArea>
+                  <CardMedia
+                    className={cls(classes.img, tile)}
+                    alt={tile.description || tile.filename}
+                    image={tile.img}
+                  />
+                </CardActionArea>
+              </Card>
+            ))}
+          </div>
+          <Fab
+            aria-label="photos"
+            className={classes.fab}
             onClick={() => history.push("/photos")}
-          /> */}
+          >
+            <ArrowBackIcon />
+          </Fab>
         </div>
       )}
       <Modal
@@ -205,7 +215,13 @@ function DenseTable({ tileData }) {
               onTouchEnd={moveTouch}
               onKeyPress={handleKeyPress}
             />
-            <CloseIcon className={classes.icon} onClick={handleClose} />
+            <Fab
+              aria-label="close"
+              className={classes.fab}
+              onClick={handleClose}
+            >
+              <CloseIcon />
+            </Fab>
           </>
         )}
       </Modal>

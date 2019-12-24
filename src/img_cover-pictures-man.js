@@ -9,7 +9,6 @@ import md_dc01b0cce267cd8f3d4a134405205c1e from "./images/hang-tien/IMG_7357.JPG
 import md_faf2eb8342e25d86bbd3afa8d6805fce from "./images/tulan/IMG_7531.JPG";
 import md_0fad79583d20460baacdb280a9b3b0bf from "./images/hue/IMG_7723.JPG";
 import md_263946f71a07c45f934bb4d039011d74 from "./images/hoi-anh/IMG_7904.JPG";
-import md_b2c3ed3fdb448b8737a96dcd4adccd87 from "./images/cantho/IMG_8009.JPG";
 import md_c8e12c4a275880e5381e786c270f145f from "./images/mekong/IMG_8259.JPG";
 import md_bd293e903facfeef0bf871c25ac0f91e from "./images/cantho2/IMG_8398.JPG";
 import md_2732798bcf0668fbe4dd350d1593686c from "./images/saigon/IMG_8500.JPG";
@@ -81,18 +80,13 @@ export default [
   },
   {
     description: "Can Tho",
-    img: md_b2c3ed3fdb448b8737a96dcd4adccd87,
-    route: "cantho"
+    img: md_bd293e903facfeef0bf871c25ac0f91e,
+    route: "cantho2"
   },
   {
     description: "Mekong Delta",
     img: md_c8e12c4a275880e5381e786c270f145f,
     route: "mekong"
-  },
-  {
-    description: "Can Tho 2",
-    img: md_bd293e903facfeef0bf871c25ac0f91e,
-    route: "cantho2"
   },
   {
     description: "Friends",

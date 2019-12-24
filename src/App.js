@@ -17,7 +17,6 @@ import Picshangtien from "./images/hang-tien/hang-tien.js";
 import Picstulan from "./images/tulan/tulan.js";
 import Picshue from "./images/hue/hue.js";
 import Picshoian from "./images/hoi-anh/hoi-anh.js";
-import Picscantho from "./images/cantho/cantho.js";
 import Picsmekong from "./images/mekong/mekong.js";
 import Picscantho2 from "./images/cantho2/cantho2.js";
 import Picssaigon from "./images/saigon/saigon.js";
@@ -53,9 +52,6 @@ export default function App() {
         </Route>
         <Route path="/mekong">
           <Photos tileData={Picsmekong} />
-        </Route>
-        <Route path="/cantho">
-          <Photos tileData={Picscantho} />
         </Route>
         <Route path="/hoian">
           <Photos tileData={Picshoian} />

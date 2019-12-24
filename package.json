@@ -22,6 +22,7 @@
     "genres": "node scripts/genResources.js",
     "genimg": "node scripts/genImages.js",
     "genact": "node scripts/genActivities.js",
+    "fiximg": "node scripts/fixRotation.js",
     "gen": "yarn genres && yarn genimg && yarn genact",
     "release": "yarn genres && yarn genimg && yarn build && yarn deploy",
     "release:old": "yarn genres && yarn genimg && yarn build && yarn deploy:old"
@@ -42,8 +43,9 @@
     ]
   },
   "devDependencies": {
+    "exifreader": "^2.13.0",
     "js-yaml": "3.13.1",
     "md5": "2.2.1"
   },
-  "homepage": "https://carltonwin8.com/vietnam"
+  "homepage": "https://tinaandcarlton.com/vietnam"
 }

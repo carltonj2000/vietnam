@@ -8,7 +8,6 @@ import Modal from "@material-ui/core/Modal";
 import CloseIcon from "@material-ui/icons/Close";
 import Fab from "@material-ui/core/Fab";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import clsx from "clsx";
 import { useHistory } from "react-router-dom";
 
 import Layout from "./Layout";
@@ -150,17 +149,6 @@ function DenseTable({ tileData }) {
 
   const history = useHistory();
 
-  const cls = (bc, { rotate: r }) =>
-    !r
-      ? clsx(bc)
-      : r === "90"
-      ? clsx(bc, classes.r90)
-      : r === "180"
-      ? clsx(bc, classes.r180)
-      : r === "270"
-      ? clsx(bc, classes.r270)
-      : clsx(bc);
-
   return (
     <Layout>
       {!tiles ? (
@@ -178,7 +166,7 @@ function DenseTable({ tileData }) {
               >
                 <CardActionArea>
                   <CardMedia
-                    className={cls(classes.img, tile)}
+                    className={classes.img}
                     alt={tile.description || tile.filename}
                     image={tile.img}
                   />
@@ -209,7 +197,7 @@ function DenseTable({ tileData }) {
         ) : (
           <div style={{ outline: 0 }}>
             <img
-              className={cls(classes.imgModal, tile)}
+              className={classes.imgModal}
               alt={tile.description || tile.filename}
               src={tile.img}
               onTouchStart={startTouch}

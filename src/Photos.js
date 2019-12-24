@@ -114,11 +114,11 @@ function DenseTable({ tileData }) {
     var diffY = initialY - currentY;
 
     if (Math.abs(diffX) > Math.abs(diffY)) {
-      if (diffX > 0) prev();
-      else next();
-    } else {
-      if (diffY >= 0) next();
+      if (diffX > 0) next();
       else prev();
+    } else {
+      if (diffY >= 0) prev();
+      else next();
     }
 
     initialX = null;

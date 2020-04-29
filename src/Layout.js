@@ -11,6 +11,7 @@ import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
 import HomeIcon from "@material-ui/icons/Home";
 import CameraIcon from "@material-ui/icons/CameraAlt";
+import YoutubeIcon from "@material-ui/icons/YouTube";
 import ItineraryIcon from "@material-ui/icons/Assignment";
 import clsx from "clsx";
 
@@ -38,20 +39,20 @@ HideOnScroll.propTypes = {
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window: PropTypes.func
+  window: PropTypes.func,
 };
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   home: {
     flexGrow: 1,
-    marginLeft: "8px"
+    marginLeft: "8px",
   },
   title: {
     borderRadius: "5px",
     color: "#ff0",
     padding: "0 4px",
     "&:hover": {
-      background: "rgba(218,37, 29, 0.5)"
-    }
+      background: "rgba(218,37, 29, 0.5)",
+    },
   },
   icon: {
     width: 28,
@@ -59,23 +60,23 @@ const useStyles = makeStyles(theme => ({
     color: "rgba(255,255, 0, 0.8)",
     marginRight: "14px",
     "&:hover": {
-      background: "rgba(218,37, 29, 0.5)"
-    }
+      background: "rgba(218,37, 29, 0.5)",
+    },
   },
   active: {
     color: "rgba(255,255, 0, 1)",
-    background: "rgba(218,37, 29, 1)"
+    background: "rgba(218,37, 29, 1)",
   },
   flag: {
-    height: 28
-  }
+    height: 28,
+  },
 }));
 
 export default function HideAppBar(props) {
   const classes = useStyles();
   const location = useLocation();
   const p = location.pathname;
-  const cls = pIn =>
+  const cls = (pIn) =>
     p === pIn ? clsx(classes.icon, classes.active) : clsx(classes.icon);
   return (
     <React.Fragment>
@@ -85,6 +86,9 @@ export default function HideAppBar(props) {
           <Toolbar>
             <Link to="/itinerary" style={{ textDecoration: "none" }}>
               <ItineraryIcon className={cls("/itinerary")} />
+            </Link>
+            <Link to="/videos" style={{ textDecoration: "none" }}>
+              <YoutubeIcon className={cls("/itinerary")} />
             </Link>
             <Link to="/photos" style={{ textDecoration: "none" }}>
               <CameraIcon className={cls("/photos")} />

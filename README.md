@@ -1,5 +1,11 @@
 # Vietnam Trip
 
+## New Install Check List
+
+- git clone this repository
+- `yarn install` to install dependencies
+- copy the image files in `src/image` and `src/resources` from Mac to Linux
+
 ## Pre Release Check List
 
 - enable service worker in `index.js`

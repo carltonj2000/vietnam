@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Activities from "./Activities";
 import Table from "./Table";
 import Photos from "./Photos";
+import Videos from "./Videos";
 import PhotosMain from "./PhotosMain";
 import PicsHanoiDay1 from "./images/hanoi-day1/hanoi-day1.js";
 import PicsHanoi2 from "./images/hanoi2/hanoi2.js";
@@ -79,6 +80,9 @@ export default function App() {
         </Route>
         <Route path="/halongbay1">
           <Photos tileData={PicsHaLongBay1} />
+        </Route>
+        <Route path="/videos">
+          <Videos />
         </Route>
         <Route path="/itinerary">
           <Table showLinks={false} />
